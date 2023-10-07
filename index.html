@@ -19,12 +19,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--? Style -->
     <link rel="stylesheet" href="assets/style.css">
+    <!--? Favicon -->
+    <link rel="shortcut icon" href="https://blog.getbootstrap.com/assets/img/favicons/favicon-32x32.png"
+        type="image/x-icon">
     <title>BootStrap | First</title>
 </head>
 
 <body data-bs-theme="dark">
     <!--?===== NAVBAR =====-->
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg position-fixed w-100" style="background-color: var(--tertiary);">
             <div class="container">
                 <a class="navbar-brand" href="#home"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a>
@@ -57,21 +60,23 @@
     </header>
     <!--?===== HOME SECTION ====-->
     <section id="home" class="row">
+        <div class="bgimgg"></div>
         <div class="title">
             <h1 class="align-items-center my-auto text-align-center">LANDING</h1>
             <h1 class="">PAGE <br>BOOTSTRAP</h1>
         </div>
     </section>
     <!--?===== ABOUT SECTION ====-->
-    <section class="container-fluid" id="about" style="background-color: var(--tertiary);">
+    <section class="container-fluid py-4" id="about">
         <div class="container-fluid">
-            <div class="row pt-5">
-                <div class="col h3 text-center">
+            <div class="row py-2">
+                <div class="col h1 text-center">
                     <span>AB</span>OUT
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="p col text-center fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam neque
+                <div class="p col text-center fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+                    neque
                     nemo sed veritatis
                     accusantium. Ab maxime magnam consectetur reprehenderit autem quasi animi neque ratione ex.</div>
             </div>
@@ -81,7 +86,7 @@
                         class="pika">
                 </div>
                 <div class="container col py-5">
-                    <h2 class="">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi possimus quod repudiandae
                     tenetur blanditiis magni porro. Necessitatibus vitae beatae, quo tenetur mollitia blanditiis enim
                     hic accusamus reiciendis aperiam quam dicta neque iusto, assumenda ipsum. Laboriosam eos aperiam
@@ -90,6 +95,10 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!--?===== PROJECT SECTION ===== -->
+    <section class="project" id="project">
+        <div class="bgimg"></div>
     </section>
     <!--? Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

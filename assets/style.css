@@ -1,4 +1,4 @@
-/*==== ROOT SETTINGS ====*/
+/*?==== ROOT SETTINGS ====*/
 :root {
     --primary: #00255C;
     --secondary: #176B87;
@@ -7,16 +7,17 @@
     --linear: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
-/*==== HTML SETTING ==== */
+/*?==== HTML SETTING ==== */
 html {
     overflow-x: hidden;
+    scroll-padding-top: 3.5em;
 }
 
 span {
     color: var(--primary);
 }
 
-/*==== NAVBAR SETTING ==== */
+/*?==== NAVBAR SETTING ==== */
 .n.navbar-nav {
     margin-left: auto;
 }
@@ -28,11 +29,13 @@ span {
     }
 }
 
-/*==== HOME SETTINGS ==== */
-#home {
-    background-image: url(https://i.pinimg.com/originals/48/4b/32/484b325cdb5bdd8bce6d8e3d131fda75.gif);
+/*?==== HOME SETTINGS ==== */
+
+#home{
+    /* background-image: url(https://i.pinimg.com/originals/48/4b/32/484b325cdb5bdd8bce6d8e3d131fda75.gif);
+    background-image: url(https://media0.giphy.com/media/NKEt9elQ5cR68/giphy.gif);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 100vh;
     min-width: 100%;
     overflow: hidden;
@@ -53,17 +56,65 @@ span {
     writing-mode: vertical-lr;
     font-weight: 700;
     letter-spacing: -2px;
-    color: var(--primary);
+    color: var(--fourth);
 }
 
 .title h1:nth-child(2) {
     margin: auto;
     margin-left: 0;
     font-size: 10vw;
-    color: var(--secondary);
+    color: var(--tertiary);
+}
+/* ?==== PROJECT SETTINGS ====*/
+#about{
+    min-height: 100vh;
+    background-color: var(--tertiary);
 }
 
-/* RESPONSIVE SETTINGS */
+/* ?==== PROJECT SETTINGS ====*/
+.bgimg{
+    background-image: url(https://i.pinimg.com/originals/bc/23/b9/bc23b955d467d91ccbcb21ba44dabf17.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.bgimg::after{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    left: 0; */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.bgimgg{
+    background-image: url(https://th.bing.com/th/id/R.37d760d25a939ac8742c74dd4812310d?rik=YHIZHt%2bpZuKt9g&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2017%2f08%2fpixel-art-gif-16.gif&ehk=9ysotmK4xLaA%2b7XWDrUsExPDdGO1w9VCdY9RJaWvUt0%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.bgimgg::after{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    left: 0; */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#project img{
+    width: 100%;
+}
+
+/* ?RESPONSIVE SETTINGS */
 
 @media screen and (max-width:990px) {
     .n.navbar-nav {
@@ -87,14 +138,14 @@ span {
         /* position: fixed; */
         display: block;
         margin: auto;
-        padding: auto;
+        /* padding: auto; */
     }
     
     .title h1:nth-child(1) {
         font-size: calc(400%);
         font-weight: 700;
         letter-spacing: -2px;
-        color: var(--primary);
+        /* color: var(--primary); */
         writing-mode: horizontal-tb;
         text-align: center;
     }
@@ -105,7 +156,7 @@ span {
         margin: auto;
         margin-left: 0;
         font-size: calc(600%);
-        color: var(--secondary);
+        /* color: var(--secondary); */
         padding: auto;
         margin: auto;
     }
