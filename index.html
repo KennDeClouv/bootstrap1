@@ -4,30 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BootStrap CDN -->
+    <!--? BootStrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font -->
+    <!--? Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome -->
+    <!--? Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style -->
+    <!--? Style -->
     <link rel="stylesheet" href="assets/style.css">
     <title>BootStrap | First</title>
 </head>
-<body>
-    
 
-
-    <!-- Bootstrap JS CDN -->
+<body data-bs-theme="dark">
+    <!--?===== NAVBAR =====-->
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed w-100" style="background-color: var(--tertiary);">
+            <div class="container">
+                <a class="navbar-brand" href="#home"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvasRight">
+                    <div class="offcanvas-header p-4">
+                        <i class="fa-brands fa-bootstrap"> Bootstrap</i>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="n navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--?===== HOME SECTION ====-->
+    <section id="home" class="row">
+        <div class="title">
+            <h1 class="align-items-center my-auto text-align-center">LANDING</h1>
+            <h1 class="">PAGE <br>BOOTSTRAP</h1>
+        </div>
+    </section>
+    <!--?===== ABOUT SECTION ====-->
+    <section class="container-fluid" id="about" style="background-color: var(--tertiary);">
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col h3 text-center">
+                    <span>AB</span>OUT
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="p col text-center fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam neque
+                    nemo sed veritatis
+                    accusantium. Ab maxime magnam consectetur reprehenderit autem quasi animi neque ratione ex.</div>
+            </div>
+            <div class="about-des row mt-4 justify-content-center">
+                <div class="col">
+                    <img src="https://flyclipart.com/thumb2/explosion-gif-transparent-transparent-gif-sticker-741584.png"
+                        class="pika">
+                </div>
+                <div class="container col py-5">
+                    <h2 class="">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi possimus quod repudiandae
+                    tenetur blanditiis magni porro. Necessitatibus vitae beatae, quo tenetur mollitia blanditiis enim
+                    hic accusamus reiciendis aperiam quam dicta neque iusto, assumenda ipsum. Laboriosam eos aperiam
+                    consequatur a recusandae vero incidunt esse dignissimos? Molestias tempore sapiente voluptate
+                    corrupti tenetur reiciendis totam odio omnis. Doloremque beatae aliquid provident sequi.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
