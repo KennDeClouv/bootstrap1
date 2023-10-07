@@ -4,17 +4,19 @@
     --secondary: #176B87;
     --tertiary: #64CCC5;
     --fourth: #EEEEEE;
+    --fifth : #00b7ff;
     --linear: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
 /*?==== HTML SETTING ==== */
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     scroll-padding-top: 3.5em;
 }
 
 span {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 /*?==== NAVBAR SETTING ==== */
@@ -65,20 +67,27 @@ span {
     font-size: 10vw;
     color: var(--tertiary);
 }
-/* ?==== PROJECT SETTINGS ====*/
+/* ?==== ABOUT SETTINGS ====*/
 #about{
     min-height: 100vh;
     background-color: var(--tertiary);
 }
 
 /* ?==== PROJECT SETTINGS ====*/
+.project{
+    height:100vh;
+}
+
+
 .bgimg{
     background-image: url(https://i.pinimg.com/originals/bc/23/b9/bc23b955d467d91ccbcb21ba44dabf17.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100%;
     min-width: 100%;
     overflow: hidden;
+    position:absolute;
+    z-index: -1;
 }
 
 .bgimg::after{
@@ -110,8 +119,14 @@ span {
     left: 0; */
     background-color: rgba(0, 0, 0, 0.8);
 }
-#project img{
-    width: 100%;
+/* ?==== CONTACT SETTINGS ====*/
+.contact{
+    background-color: var(--tertiary);
+}
+
+/* ?==== FOOTER SETTINGS ====*/
+footer{
+    background-color: var(--tertiary);
 }
 
 /* ?RESPONSIVE SETTINGS */
@@ -130,6 +145,12 @@ span {
     }
     .pika-des{
         margin: 0;
+    }
+    .bgimg{
+        height: 150%;
+    }
+    .project{
+        height:150vh;
     }
 }
 
@@ -160,4 +181,33 @@ span {
         padding: auto;
         margin: auto;
     }
+    .project{
+        height: 220vh;
+    }
 }
+@media screen and (max-width:768px) {
+    .bgimg{
+        height: 205%;
+    }
+    .project{
+        height: 205vh;
+    }
+}
+
+
+/* https://64.media.tumblr.com/50d43db43843a7dc2fbb93c660a1d0dc/tumblr_ozar2dfRQI1rh3rypo1_1280.gif */
+/* https://giffiles.alphacoders.com/209/209343.gif */
+/* https://64.media.tumblr.com/6d037291fa6580530a7ae1234a012bb2/ddeabf842eb698ac-6a/s500x750/83ebe154909995b4327e31bf0e0c28a194c5908b.gifv */
+/* https://i.pinimg.com/originals/19/6a/d9/196ad9d3122098b297d7b99ce9ff209f.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-Animation-City-Skylines-GIF-by-iSaith-Gfycat.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/gif-Backgrounds-Wallpaper-Cave.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/featured-gifs-WiffleGif.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-aesthetic-GIFs-Get-the-best-GIF-on-GIPHY.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/Beautiful-Gifs-in-1080p-in-2019-Pixel-art-Anime-scenery-.gif */
+/* https://cutewallpaper.org/21/pixel-wallpaper-gif/Futuristic-Pixel-Animated-IPhone-Wallpaper-GIF-by-iSaith.gif */
+/* https://i.pinimg.com/originals/9a/58/c3/9a58c343701abc80f7e1d5ec4142ab4d.gif */
+/* https://i.pinimg.com/originals/05/68/3b/05683b1df65bc81f3b2840ea50b152e0.gif */
+/* https://i.pinimg.com/originals/43/c3/d7/43c3d78afed80c2c68240e622437d81e.gif */
+/* https://gamebrott.com/wp-content/uploads/2023/05/Herta-Honkai-Star-Rail.gif */
+/* https://media.tenor.com/betamD00Qe0AAAAC/pixel.gif */
